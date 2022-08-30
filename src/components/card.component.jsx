@@ -11,14 +11,14 @@ const Card = ({ newQuote, quote }) => {
     <div className="card">
       <div className="card-info">
         <h2>{text}</h2>
-        <p>{author ? author : "Unknown"}</p>
+        <p className="author-text">{author ? author : "Unknown"}</p>
       </div>
-      <div className="card-buttons">
+      <div className="button-container">
         <button type="button" className="button quote" onClick={newQuote}>
           New Quote
         </button>
         <button className="button tweet" onClick={tweet}>
-          Tweet this
+          <i class="fab fa-twitter"></i>
         </button>
       </div>
     </div>
